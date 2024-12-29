@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background: rgb(9,105,121);
+            background: linear-gradient(90deg, rgba(9,105,121,0.8631827731092436) 26%, rgba(9,105,121,0.8631827731092436) 35%, rgba(8,118,137,1) 43%, rgba(7,133,156,1) 52%, rgba(6,141,166,1) 57%, rgba(3,172,205,1) 76%, rgba(0,212,255,1) 100%);
+        }
+        fieldset{
+           width: 500px;
+           border: 5px solid black;
+           border-radius: 15px;
+        }
+        input:required{
+            border: 2px solid red;
+        }
+        input:optional{
+            border: 3px solid green;
+        }
+        input[readonly]
+        {
+         background-color:aqua;
+         color: black;
+         font: 600;
+        }
+        select{
+            background-color: purple;
+            font-size: 20px;
+            border-radius :30px;
+            width: 300px;
+            cursor: pointer;
+        }
+        input[type="radio"]:checked{
+            height: 30px;
+            width: 30px;
+        }
+        input[type="radio"]:checked+label{
+            font-size: 20px;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h2>Registration Form</h2>
+    <fieldset>
+        <legend>Personal Details</legend>
+        <form>
+            <table>
+                <tr>
+                    <td><label>Name</label></td>
+                    <td><input type="text" name="name" placeholder="Ex:Sumithra" required></td>
+                </tr>
+                <tr>
+                    <td><label>Surname</label></td>
+                    <td><input type="text" name="Surname" placeholder="Holagunda" optional></td>
+                </tr>
+                <tr>
+                    <td><label>Mobile Number</label></td>
+                    <td><input type=" tel" placeholder="1247438925"  name="Mb" required ></td>
+                </tr>
+                <tr>
+                    <td><label>Email</label></td>
+                    <td><input type="email" placeholder="abc@gmail.com" name="mail" required></td>
+                </tr>
+                <tr>
+                    <td><label>Password</label></td>
+                    <td><input type="password" placeholder="min-8 character" name="pwd" required></td>
+                </tr>
+                <tr>
+                    <td><label>Confirm Password</label></td>
+                    <td><input type="password" name="pwd" id=""  placeholder="min-8 character" required></td>
+                </tr>
+                <tr>
+                    <td><label>DOB</label></td>
+                    <td><input type="date" name="dob" id="" required></td>
+                </tr>
+                <tr>
+                    <td><label>Age</label></td>
+                    <td><input type="number" name="age" id=""  required></td>
+                </tr>
+                <tr>
+                    <td><label>Gender</label></td>
+                    <td><input type="radio" name="gender" id="M"><label>Male</label>
+                    <input type="radio" name="gender" id="F" ><label>Female</label>
+                    <input type="radio" name="gender" id="O"><label>Other</label>
+                     </td>
+                </tr>
+                <tr>
+                    <td><label>Select Country</label></td>
+                    <td>
+                    <select>
+                     <option>India</option>
+                    <option>USA</option>
+                    <option>Canada</option>
+                    </select>
+                </td>
+                </tr>
+                <tr><td><label>Upload Picture</label></td>
+                <td><input type="file" name="file"></td>
+                </tr>
+                <tr><td><input type="reset"></td></tr>
+            </table>
+       
+    </fieldset>
+    <fieldset>
+        <legend>Course Details</legend>
+        
+            
+               <label> Select Course</label>
+                <select>
+                    <option>Full Stack Developement</option>
+                    <option>MERN Stack Developement</option>
+                </select>
+                <br><br>
+                <label>Delivary Mode</label>
+                    <input type="radio" name="mode" id="on"><label>Online</label>
+                        <input type="radio" name="mode" id="off"><label>Offline</label>
+            <br><br>
+                <label>Institure Name</label>
+                <input type="text" value="TAP Academy" readonly>
+            <br><br>
+            <label>Comments</label><br>
+             <textarea rows="4" cols="20"></textarea>
+            <br>
+            <input type="submit" name="" id="">
+    </fieldset>
+</form>
+</body>
+</html>
