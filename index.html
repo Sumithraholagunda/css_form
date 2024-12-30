@@ -41,6 +41,42 @@
             font-size: 20px;
             color: red;
         }
+        p{
+            display: none;
+        }
+        input:hover+p{
+             display: inline;
+             color: black;
+             background-color: green;
+        }
+        input:focus{
+            background-color: red;
+            color: black;
+        }
+        img{
+            display: none;
+        }
+        input[type="email"]:focus:valid~img.valid{
+          display: inline;
+          height: 15px;
+          width: 15px;
+        }
+        input[type="email"]:focus:invalid~img.invalid{
+          display: inline;
+          height: 15px;
+          width: 15px;
+        }
+
+        input[name="age"]:focus:in-range:valid~img.valid{
+            display: inline;
+            width: 15px;
+            height: 15px;
+        }
+        input[name="age"]:focus:out-of-range:invalid~img.invalid{
+            display: inline;
+            width: 15px;
+            height: 15px;
+        }
     </style>
 </head>
 <body>
