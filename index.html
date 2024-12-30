@@ -18,7 +18,7 @@
             border: 2px solid red;
         }
         input:optional{
-            border: 3px solid green;
+            border: 3px dashed green;
         }
         input[readonly]
         {
@@ -87,7 +87,8 @@
             <table>
                 <tr>
                     <td><label>Name</label></td>
-                    <td><input type="text" name="name" placeholder="Ex:Sumithra" required></td>
+                    <td><input type="text" name="name" placeholder="Ex:Sumithra" required>
+                     <p>Enter your name </p></td>
                 </tr>
                 <tr>
                     <td><label>Surname</label></td>
@@ -95,11 +96,14 @@
                 </tr>
                 <tr>
                     <td><label>Mobile Number</label></td>
-                    <td><input type=" tel" placeholder="1247438925"  name="Mb" required ></td>
+                    <td><input type=" tel" placeholder="1247438925"  name="Mb" required >
+                     <p>Enter mobile number </p></td>
                 </tr>
                 <tr>
                     <td><label>Email</label></td>
-                    <td><input type="email" placeholder="abc@gmail.com" name="mail" required></td>
+                    <td><input type="email" placeholder="abc@gmail.com" name="mail" required>
+                      <img src="yes.png" class="valid">
+                        <img src="no.png" class="invalid"></td>
                 </tr>
                 <tr>
                     <td><label>Password</label></td>
@@ -115,7 +119,9 @@
                 </tr>
                 <tr>
                     <td><label>Age</label></td>
-                    <td><input type="number" name="age" id=""  required></td>
+                    <td><input type="number" name="age" min="18" max="100" required>
+                      <img src="yes.png" class="valid">
+                        <img src="no.png" class="invalid"></td>
                 </tr>
                 <tr>
                     <td><label>Gender</label></td>
